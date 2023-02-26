@@ -66,3 +66,28 @@ main {
 form {
     background-color: white;
 }
+
+.kieuDiv {
+    background-color: white;
+    text-align: center;
+}
+
+.description1 {
+    background-color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.reeseDiv {
+    background-color: white;
+    text-align: center;
+}
+
+.description2 {
+    font-size: 20px;
+}
+
+.dogVideo {
+    background-color: white;
+    text-align: center;
+}
