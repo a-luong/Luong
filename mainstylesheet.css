@@ -73,6 +73,7 @@ form {
 .kieuDiv {
     background-color: white;
     text-align: center;
+    padding: 40px;
 }
 
 .description1 {
@@ -84,6 +85,7 @@ form {
 .reeseDiv {
     background-color: white;
     text-align: center;
+    padding: 40px;
 }
 
 .description2 {
