@@ -24,10 +24,12 @@
             <p>I am currently in my first semester in the Computer Programming program at <i>Humber College.</i>I was previously enrolled in the Human Resources degree at <i>York University</i>; however, I realized my passion was in computer programming and decided to switch programs.</p>
             <br>
             <h2>Hobbies</h2>
-            <p>My favourite thing to do is spending time with my two dogs. You can find out more information about them under the "My Dogs" link at the top! Aside from spending time with my dogs, I enjoy playing video games. Although I don't have as much time to play recently, some of my favourite games are listed below.</p>
+            <p>My favourite thing to do is spending time with my two dogs. Aside from spending time with my dogs, I enjoy playing video games. Although I don't have as much time to play recently, you can find some of my favourite games by clicking the button below!</p>
+
+            <button id = "gameButton" onclick="toggleGames()">Games Table</button>
             <br>
 
-            <div class="gameTable">
+            <div id="gameTable">
                 <table border="1">
                     <tr>
                         <td><b>Game Name</b></td>
@@ -56,5 +58,17 @@
             <h2>Favourite Foods</h2>
             <p>My favourite foods are always changing but right now my top 3 favourite foods are sushi, steak and pho.</p>
        
+        
+
+        <script>
+            function toggleGames() {
+                var toggle = document.getElementById('gameTable');
+                if (toggle.style.display === "none") {
+                    toggle.style.display = "block";
+                }else {
+                    toggle.style.display = "none";
+                }
+            }
+        </script>
     </body>
 </html>

@@ -10,7 +10,7 @@
 
 a {
     text-decoration: none;
-    color:green;
+    color:black;
 }
 
 body {
@@ -51,18 +51,18 @@ img {
 }
 
 .aboutMe {
-    background-color: white;
+    background: rgba(255, 255, 255, 0.733);
     font-size: 20px;
     text-align: center;
     padding: 10px;
     margin: 10px;
-    box-shadow: 10px 5px 5px lightgreen;
 }
 
 table {
+    background: white;
     width: 75%;
     margin: auto;
-    box-shadow: 10px 5px 5px lightgreen;
+    box-shadow: 10px 5px 5px lightcoral;
 }
 
 main {
@@ -115,4 +115,10 @@ aside {
     width: 500px;
     font-size: 20px;
 }
-
+#gameTable {
+    display: none; 
+}
+#gameButton {
+    padding: 5px;
+    margin-top: 20px; 
+}
