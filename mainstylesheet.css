@@ -4,7 +4,8 @@
 }
 
 * {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
 }
 
 a {
@@ -13,7 +14,7 @@ a {
 }
 
 body {
-    background-image: url("newbackground.jpg");
+    background-image: url("back.jpg");
     background-repeat: no-repeat;
 
     background-size: cover;
@@ -29,7 +30,7 @@ nav {
     font-size: 20px;
     padding: 10px;
     border: 10px;
-    box-shadow: 10px 5px 5px lightgreen;
+    box-shadow: 10px 5px 5px #fad7f0;
 }
 
 .indexHeader {
@@ -43,8 +44,10 @@ nav {
 }
 
 img {
-    max-width: 15%;
-    max-height: 10%; 
+    max-width: 10%;
+    max-height: 5%; 
+    float: left;
+    clear: both;
 }
 
 .aboutMe {
@@ -105,3 +108,11 @@ td{
     border: 5px double lightgreen;
     font-weight: bold;
 }
+aside {
+    margin-top: 200px;
+    margin-left: 10px;
+    float: left; 
+    width: 500px;
+    font-size: 20px;
+}
+
