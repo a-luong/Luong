@@ -62,7 +62,7 @@ table {
     background: white;
     width: 75%;
     margin: auto;
-    box-shadow: 10px 5px 5px lightcoral;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.274);
 }
 
 main {
@@ -120,5 +120,8 @@ aside {
 }
 #gameButton {
     padding: 5px;
-    margin-top: 20px; 
+    margin-top: px; 
+}
+#education {
+    visibility: hidden;
 }
