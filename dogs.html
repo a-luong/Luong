@@ -4,6 +4,12 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="mainstylesheet.css">
         <title>Amy Luong</title>
+        <style>
+            #reesePics, #kieuPics {
+                visibility: hidden;
+                background: rgba(255, 255, 255, 0.733);
+            }
+        </style>
     </head>
     <body>
         <nav>
@@ -19,20 +25,59 @@
 
         <div class="kieuDiv">
             <h1>Kieu</h1>
-            <img src="kieu.jpg">
-            <p class="description1">Kieu is 15 years old. I've had her since I was in the 5th grade. She is a Jack Russell and Chihuahua mix whose one true love is food.</p>
+            <img id="kieuPicture" src="kieu.jpg">
+            <p class="description1">Kieu is 15 years old. I've had her since I was in the 5th grade. She is a Jack Russell and Chihuahua mix whose one true love is food. Click the button below for more Kieu photos.</p>
+            <br>
+            <br>
+            <button onclick="showKieu()">More Kieu Photos!</button>
+            <br>
+            <br>
+            <div id="kieuPics">
+            <img id="shirtKieu" src="shirtKieu.jpg">
+            <img id="sleepingKieu" src="sleepingKieu.jpg">
+            <img id="bedKieu" src="bedKieu.jpg">
             </div>
+        </div>
         <br>
         <br>
         <br>
         <div class="reeseDiv">
             <h1>Reese</h1>
-            <img src="reese.jpg">
-            <p class="description2">Reese is 4 years old. I got him with my boyfriend when we first moved in together. He is a chocolate lab and husky mix and he for some reason likes to smile a lot... I'm not joking, I have so many photos of him smiling like this.</p>
+            <img src="reese.jpg" id="reesePicture">
+            <p class="description2">Reese is 4 years old. I got him with my boyfriend when we first moved in together. He is a chocolate lab and husky mix. Click the button below for more Reese photos.</p>
+            <br>
+            <br>
+            <button onclick="showReese()">More Reese Photos!</button>
+            <br>
+            <br>
+            <div id="reesePics">
+            <img id="xmasReese" src="xmasReese.jpg" >
+            <img id="plantReese" src="plantReese.jpg">
+            <img id="shirtReese" src="shirtReese.jpg">
+            </div>
         </div>
         <br>
         <br>
         <br>
-   
+        
+        <script>
+            function showReese() {
+                var reesePics = document.getElementById('reesePics');
+                if (reesePics.style.visibility === "hidden"){
+                    reesePics.style.visibility = "visible";
+                }else {
+                    reesePics.style.visibility = "hidden";
+                }
+            }
+            function showKieu() {
+                var kieuPics = document.getElementById('kieuPics');
+                if (kieuPics.style.visibility === "hidden"){
+                    kieuPics.style.visibility = "visible";
+                }else {
+                    kieuPics.style.visibility = "hidden";
+                }
+            }
+
+        </script>
     </body>
 </html>

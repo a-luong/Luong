@@ -19,15 +19,14 @@
         <br>
         <div class="aboutMe">
             <h1>About Me</h1>
+            <h3>Hover for more info!</h3>
             <br>
             <h2 onmouseover="hoverEducation()" onmouseout="hoverEducation()">Education</h2>
             <p id="education">I am currently in my first semester in the Computer Programming program at <i>Humber College.</i>I was previously enrolled in the Human Resources degree at <i>York University</i>; however, I realized my passion was in computer programming and decided to switch programs.</p>
             <br>
 
-            <h2>Hobbies</h2>
-            <p id="hobbies">My favourite thing to do is spending time with my two dogs. Aside from spending time with my dogs, I enjoy playing video games. Although I don't have as much time to play recently, you can find some of my favourite games by clicking the button below!</p>
-
-            <button id = "gameButton" onclick="toggleGames()">Games</button>
+            <h2 onmouseover="hoverHobbies()" onmouseout="hoverHobbies()">Hobbies</h2>
+            <p id="hobbies">My favourite thing to do is spending time with my two dogs. Aside from spending time with my dogs, I enjoy playing video games. Although I don't have as much time to play recently, you can find some of my favourite games below!</p>
             <br>
 
             <div id="gameTable">
@@ -56,22 +55,33 @@
             </div>
             
             <br>
-            <h2 id="favFoods">Favourite Foods</h2>
-            <p>My favourite foods are always changing but right now my top 3 favourite foods are sushi, steak and pho.</p>
+            <h2 onmouseover="hoverFood()" onmouseout="hoverFood()">Favourite Foods</h2>
+            <p id="favFoods">My favourite foods are always changing but right now my top 3 favourite foods are sushi, steak and pho.</p>
          
         
 
         <script>
-            function toggleGames() {
-                var toggle = document.getElementById('gameTable');
-                if (toggle.style.display === "none") {
-                    toggle.style.display = "block";
-                }else {
-                    toggle.style.display = "none";
-                }
-            }
             function hoverEducation() {
                 var hover = document.getElementById('education'); 
+                if (hover.style.visibility === "visible") {
+                    hover.style.visibility = "hidden";
+                }else {
+                    hover.style.visibility = "visible";
+                }
+            }
+            function hoverHobbies() {
+                var hover = document.getElementById('hobbies'); 
+                var gameTable = document.getElementById('gameTable');
+                if (hover.style.visibility === "visible" && gameTable.style.visibility === "visible") {
+                    hover.style.visibility = "hidden";
+                    gameTable.style.visibility = "hidden";
+                }else {
+                    hover.style.visibility = "visible"; 
+                    gameTable.style.visibility = "visible";
+                }
+            }
+            function hoverFood() {
+                var hover = document.getElementById('favFoods'); 
                 if (hover.style.visibility === "visible") {
                     hover.style.visibility = "hidden";
                 }else {

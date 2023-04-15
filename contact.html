@@ -16,22 +16,33 @@
         <br>
         <br>
         <br>
-        <div class="contactMe">
-        <form>
-            <h1>Contact Me!</h1>
+        <div class="contactMePage">
+            <h1 id="contactMe">Contact Me!</h1>
+            <table id="contactTable">
+                <tr id="contactTr">
+                    <td id="contactTr"><label for="contactName">Name:</label></td>
+                    <td id="contactTr"><input id="contactName"></td>
+                </tr>
+                <tr id="contactTr">
+                    <td id="contactTr"><label for="contactEmail">Email:</label></td>
+                    <td id="contactTr"><input id="contactEmail"></td>
+                </tr>
+                <tr id="contactTr">
+                    <td id="contactTr"><label for="contactNumber">Phone Number:</label></td>
+                    <td id="contactTr"><input id="contactNumber"></td>
+                </tr>
+            </table>
+            <button id ="contactButton" onclick="displayInfo()">Submit</button>
             <br>
-            Your Name: <input type="text" id="nameBox">
             <br>
-            <br>
-            Email: <input type="text" name="emailBox" id="emailID">
-            <br>
-            <br>
-            Enter Message:
-            <textarea></textarea>
-            <br>
-            <br>
-            <input type="submit" name="submitBox" id="submitID">
-        </form>
+            <p id="submitMessage"></p>
         </div>
+        <script>
+            function displayInfo() {
+                var inputName = document.getElementById('contactName').value;
+                document.getElementById('submitMessage').innerHTML = "Thank you, " + inputName + "! I will contact you as soon as possible!"; 
+                
+            }
+        </script>
     </body>
 </html>
